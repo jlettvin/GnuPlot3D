@@ -13,7 +13,7 @@ __version__    = "0.0.1"
 """
 GunuPlot3D.py
 
-Implementes a dynamic scientific 3D visualizer class.
+Implements a dynamic scientific 3D visualizer class.
 
 Copyright(c) 2013 Jonathan D. Lettvin, All Rights Reserved"
 
@@ -124,7 +124,7 @@ class GnuPlot3D(dict):
                 for name, pair in
                 [(name,str(self[name]).replace(',',':'))
                     for name in ['xrange','yrange','zrange']]]:
-            print line
+            #print line,
             self.send(line)
         for line in [   # Set the terminal type and window size.
                 ("set terminal %s size %d,%d\n" %
